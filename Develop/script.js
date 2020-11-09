@@ -12,7 +12,7 @@ var numberQ = false
 var passLength = 0
 // Write password to the #password input
 function writePassword() {
- passLength = prompt('How long of a (8-124 char)?')
+ passLength = prompt('How long of a (8-128 char)?')
  //takes number from user input and converts string into number
  passLength = parseInt(passLength)
   if (passLength >= 8 && passLength <= 128) {
@@ -27,7 +27,7 @@ function writePassword() {
 
     
   } else {
-    alert("Password length must be between 8-124 char")
+    alert("Password length must be between 8-128 char")
   }
 
 }
